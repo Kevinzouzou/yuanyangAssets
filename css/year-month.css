@@ -1,0 +1,49 @@
+/*年月组件*/
+.made-year-month{
+    width: 200px;
+    display: none;
+    position: absolute;
+    z-index: 999;
+}
+.made-year-month .row{
+    width: 100%;
+    margin: 0;
+    background: #A59DF2;
+    color: #fff;
+    height: 30px;
+    line-height: 30px;
+}
+.made-year-month .row button{
+    background: #a59df2;
+    border: 0;
+    padding: 0 8px;
+}
+.made-year-month ul{
+    padding: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #c4c4c4;
+    width: 100%;;
+    background: #fff;
+}
+.made-year-month ul:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.made-year-month ul li{
+    float: left;
+    width: 22%;
+    margin: 2px 1.5%;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;;
+    color: #333;
+}
+.made-year-month ul li.active,.made-year-month ul li:active{
+    background: #A59DF2;
+    color: #fff;;
+}
+.made-year-month li:hover{
+    background: #eee;
+    cursor: pointer;
+}

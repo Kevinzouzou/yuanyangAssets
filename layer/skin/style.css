@@ -1,0 +1,30 @@
+.layui-layer-title{
+    background: #a59df2;
+    color:#fff;
+    text-align: left;
+    font-family: Microsoft YaHei;
+    height: 3rem;
+    line-height: 2.8rem;
+    font-size: 1rem;
+}
+
+.layui-layer-setwin{
+    background: #6f67ba;
+    text-align: center;
+    width:2rem;
+    height:2rem;
+    margin-top:-0.5rem;
+    padding: 0rem;
+}
+
+a.layui-layer-ico.layui-layer-close.layui-layer-close1{
+    position: relative;
+    margin-left: -0.05rem;
+    margin-top: 0.3rem;
+    width:1.5rem;
+    height:1.5rem;
+    background: url(default/icon.png) no-repeat;
+    background-size:100% 100%;
+
+}
+

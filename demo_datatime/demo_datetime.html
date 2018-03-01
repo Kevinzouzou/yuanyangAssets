@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"/>
+    <style>
+        .dropdown-menu{
+            padding: 0;
+        }
+        .glyphicon{
+            background: url(img/icon-arrow-left.png) no-repeat center center #59a294;
+            color: #fff;
+            background-size: 0.73rem 0.94rem;
+            display: inline-block;
+            width: 100%;
+            height: 0.94rem;
+            border-radius: 0;
+        }
+        .icon-arrow-right{
+            background-image: url(img/icon-arrow-right.png);
+        }
+        .table-condensed thead tr:last-child{
+            color: #59a294;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <label>起始日期：</label>
+    <input type="text" class="calendar">
+</div>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script>
+    //bootstrap 日期插件
+    $(function() {
+        $('.calendar').datetimepicker({
+            format: 'yyyy-mm-dd',
+            minView:'month',
+            language: 'zh-CN',
+            autoclose:true,
+            //startDate:new Date(),
+            //endDate:new Date(),
+            pickerPosition:'bottom-right'//相对位置
+        });
+    });
+    document.getElementsByTagName('html')[0].style.fontSize=document.body.clientWidth/100 +'px';
+</script>
+</body>
+</html>
